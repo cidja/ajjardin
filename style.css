@@ -70,7 +70,10 @@ html, body {
 
 *,*::before, *::after {box-sizing: border-box;} /* */
 
-
+/*-----------------Section services -----------------------------*/
+.marginServiceSection{
+    height: 60px;
+}
 
 /*-----------Je crée des classes que j'appelerais quand j'ai besoin dans les déclarations css pour m'éviter de devoir les réecrire sans cesse */
 
