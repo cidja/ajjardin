@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang='fr-FR'>
+<html lang="fr-FR">
         <!--Petits commentaires concernant la mise en page 
-        pour les class j'ai crée des classes css génériques pour les utiliser partout dans le documents html
-        exemple: div class='projet w40p' ce qui est égale à class='width40%' car w40p est déclaré comme classe dans mon fichier style.css
-        autre point dans les déclarations de classe dans le document html quand j'écris à la fin de la classe un + ça signifie qu'il y a une déclaration
+        pour les class j"ai crée des classes css génériques pour les utiliser partout dans le documents html
+        exemple: div class="projet w40p" ce qui est égale à class="width40%" car w40p est déclaré comme classe dans mon fichier style.css
+        autre point dans les déclarations de classe dans le document html quand j"écris à la fin de la classe un + ça signifie qu'il y a une déclaration
         dans le ficihier style pour cette class et si je rajoute +tablette = class affecté par le breakpoint tablette (1023px) et idem si +smartphone-->
         <head>
             <title>
@@ -11,11 +11,11 @@
             </title>
             
 
-            <meta charset='utf-8' />
+            <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, user-scalable=yes"> <!--ligne pour éviter bug des 960px de large sur tous les navigateurs sauf firefox mis le 1.8.19-->
             <!--Pour le référencement source: https://tontonduweb.com/balises-meta-indispensables-pour-partage-sur-reseaux-sociaux/-->
-            <meta name='description' content="Site de AJ-jardin les experts du végétal, pour une image qui marque ! " />
-            <meta name='keywords' content="jardinier, coupe, oliver, taille, tonte, débroussaillage" />
+            <meta name="description" content="Site de AJ-jardin les experts du végétal, pour une image qui marque ! " />
+            <meta name="keywords" content="jardinier, coupe, oliver, taille, tonte, débroussaillage" />
                 
                 
             <!-- Card meta pour Twitter -->
@@ -32,108 +32,114 @@
             <meta property="og:image" content="images/tag_facebook.jpg" />
             <meta property="og:description" content="Prêt a tout tondre" />
             <meta property="og:site_name" content="AJ-jardin" />
-            <link rel='stylesheet' href='style.css' /> <!--Lien pour la feuille de style-->
-            <link rel='stylesheet' href='fonts/css/all.css' /> <!--pour la police font awesome source: https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself-->
+            <link rel="stylesheet" href="style.css" /> <!--Lien pour la feuille de style-->
+            <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css"> <!--Récupérer sur le site bootswatch pour un design simple et rapide-->
+            <link rel="stylesheet" href="fonts/css/all.css" /> <!--pour la police font awesome source: https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself-->
             <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> <!--Polices GOOGLE-->
+            <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
         </head>
 
 
-    <body class='Roboto mb50px'>
-        <header class='header padt5px autolr+'> <!--Qui constitue le haut du site en position fixed-->
-        <div class='logo autolr w20px'>
-            <img class='img_logo' src='images/portfolio/logo.jpeg' alt='logo AJ-jardin' title='voici notre logo' />
-        </div>
-            <nav class=' nav_menu w40p Roboto fs20px'> <!--va chercher la class w40p-->
-                <ul class='li_menu flex flex-jb'> <!--Menu qui devra être fixe toujours affiché en haut, utilsation de class avoir un unique-->
-                    <li  class='menu_element listtypenone +'><a class='anone' href='#accueil'>Accueil</a></li> <!--Les liens ne donnent sur rien mais j'ai mis des liens pour pouvoir faire une régle :hover dessus-->
-                    <li  class='menu_element listtypenone +'><a class='anone' href='#services'>Services</a></li><!--href avec des ancres pour renvoyer dans chaque partie de la page-->
-                    <li  class='menu_element listtypenone +'><a class='anone' href='#projets'>Portflio</a></li>
-                    <li  class='menu_element listtypenone +'><a class='anone' href='#contact'>Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-            <!--Section accueil-->
-        <div id='accueil' class='h60px'></div> <!--id accueil pour l'ancre dans le menu en haut-->
-        <div class='accueil pabsolute + +tablette +smartphone'> <!--permet de mettre l'image en fond-->
-            <div class='fond_timeline pabsolute'>
-                <div class='timeline prelative +'></div> <!--affiche une timeline sous le slider-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-flex justify-content-center flex-column">
+            <a class="navbar-brand" href="#accueil">AJJARDIN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projets">Projets réalisés</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              
             </div>
-        </div>
-        <section class='accueil_text mt200px mb200px flex flex-ac prelative overhidden +tablette'>
-            <i class="fas fa-chevron-right pabsolute ml98p blancgris +"></i> <!--position absolute pour passer derrière le titre-->
-            <i class="fas fa-chevron-left pabsolute  ml5px blancgris +"></i> <!--position absolute pour passer derrière le titre-->
-                <!--les images du slide sont passés en css via background-image-->
-            <div class='texte_slide ml8p'> <!--Englobe tous les enfants avec la police Roboto-Black-->
-                <h1 class='suite_titre_slide_webagency fs25px blancgris +tablette +smartphone'>
-                    <span class='titre_slide_webagency bleugris'>AJ-jardin</span> 
-                : LES JARDINIERS DE TOUS VOS PROJETS !
-                </h1>
-                <span class='texte_slide_webagency fs18px blancgris +smartphone'>AJ-jardin les experts de votre végétation !</span>
-                <div>
-                    <a href='#contact' class='anone'>
-                        <div class='boutonbleu pad15px mt15px + +smarthpone'> Plus d'infos</div>
-                    </a>
-                </div>
-            </div>   
-        </section>
+          </nav>
 
+<h1>Les jardiniers de tous vos projets</h1>
+        <section id="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/1025/600/400"></div>
+                <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         
         <!--Section services-->
-        <div id='services' class='h60px'></div> <!--div mis pour que l'ancre arrive pile sur le mot service-->
-        <section class='services lh25px maxw1250px autolr +tablette'>
-            <h2 class='titre_services txtcenter fs35px ftblack'>NOS SERVICES 
+        <div id="services" class="h60px"></div> <!--div mis pour que l"ancre arrive pile sur le mot service-->
+        <section class="services lh25px maxw1250px autolr +tablette">
+            <h2 class="titre_services txtcenter fs35px ftblack">NOS SERVICES 
             </h2>
             <!--3 lignes du dessous pour faire circle avec lignes sur les côtés voir css paramètres css des balises class et class -->
-            <span class='circle_titre + +smarthpone'>
-                <i class='fas fa-circle circle_titre_submenu +'></i>
+            <span class="circle_titre + +smarthpone">
+                <i class="fas fa-circle circle_titre_submenu +"></i>
             </span>
-            <p class='p_intro_services txtcenter'>
+            <p class="p_intro_services txtcenter">
             Ajardin est le fruit de deux passionnés du jardin. Nous mettrons tout notre savoir 
             pour vous apporter les meilleurs solutions.
             </p>
-            <div class='conteneur_img_et_para flex flex-ac maxw1400px autolr +tablette'> <!--Display flex avec un align-items center pour les mettre centré dans le div-->
-                <img class='img_services w60p mr15px borderadius20px +tablette +smarthpone' src='images/tondeuse.jpeg' alt="tondeuse a gazon" /> 
-                <div class='para_services +smarthpone flex flex-jb flexdcol'>
-                    <div class='para1_service flex flex-ac +smarthpone'>
-                        <div class='icon_1 flex flex-ac + +smartphone'>
+            <div class="conteneur_img_et_para flex flex-ac maxw1400px autolr +tablette"> <!--Display flex avec un align-items center pour les mettre centré dans le div-->
+                <img class="img_services w60p mr15px borderadius20px +tablette +smarthpone" src="images/tondeuse.jpeg" alt="tondeuse a gazon" /> 
+                <div class="para_services +smarthpone flex flex-jb flexdcol">
+                    <div class="para1_service flex flex-ac +smarthpone">
+                        <div class="icon_1 flex flex-ac + +smartphone">
                             <i class="fas fa-cut fa-3x"></i> <!--cut font awesome en taille 3x-->
                             <i class="fas fa-circle circle_para_services ml8p +"></i> <!--Cercle mis a côté-->
                         </div>
-                        <aside class='texte_ux_design'>
-                            <h3 class='fs25px ftbold'>Coupe et élagage</h3>
-                            <p class='texte_para_services +smartphone'>
+                        <aside class="texte_ux_design">
+                            <h3 class="fs25px ftbold">Coupe et élagage</h3>
+                            <p class="texte_para_services +smartphone">
                                 La taille des arbres, arbustes et plantes
                                 est un art délicat. Si trop coupé le végétal aura du mal a repartir au risque de périr.
-                                Si les arbres ne sont pas assez coupés, le risque qu'il ne donnent que des fruits de mauvaises qualité est grand. 
+                                Si les arbres ne sont pas assez coupés, le risque qu"il ne donnent que des fruits de mauvaises qualité est grand. 
                             </p>
                         </aside>
                     </div>
-                    <div class='para2_service flex flex-ac'>
-                        <div class='icon_2 flex flex-ac + +smartphone'>
+                    <div class="para2_service flex flex-ac">
+                        <div class="icon_2 flex flex-ac + +smartphone">
                             <i class="fas fa-tractor fa-3x"></i> <!--Cube font awesome en taille 3x-->
                             <i class="fas fa-circle circle_para_services ml8p +"></i> <!--Cercle mis a côté-->
                         </div>
-                        <aside class='text_ui_design'>
-                            <h3 class='fs25px ftbold'>Tonte et débroussaillage</h3>
-                            <p class='texte_para_services +smartphone'>
-                                Le débroussaillage est aujourd'hui devenu une 
-                                <a href='https://www.service-public.fr/particuliers/vosdroits/F33298' target='blank'</a>obligation</a>
+                        <aside class="text_ui_design">
+                            <h3 class="fs25px ftbold">Tonte et débroussaillage</h3>
+                            <p class="texte_para_services +smartphone">
+                                Le débroussaillage est aujourd"hui devenu une 
+                                <a href="https://www.service-public.fr/particuliers/vosdroits/F33298" target="blank"</a>obligation</a>
                                  pour empêcher la propagation des feux toujours plus présents au long de notre magnifique été.
                                  Grâce aux dernières technologies électroportatives, cette action ne représente plus une nuisance sonore.
                             </p>
                         </aside>
                     </div>
-                    <div class='para3_service flex flex-ac'>
-                        <div class='icon_3 flex flex-ac + +smartphone'>
+                    <div class="para3_service flex flex-ac">
+                        <div class="icon_3 flex flex-ac + +smartphone">
                             <i class="fas fa-seedling fa-3x"></i> <!--check font awesome en 3x-->
                             <i class="fas fa-circle circle_para_services_pie ml8p +"></i> <!--Cercle mis a côté-->
                         </div>
-                        <aside class='text_seo'>
-                            <h3 class='fs25px ftbold'>Création d'espaces verts</h3>
-                            <p class='texte_para_services +smartphone'>
+                        <aside class="text_seo">
+                            <h3 class="fs25px ftbold">Création d"espaces verts</h3>
+                            <p class="texte_para_services +smartphone">
                                 Fort de notre expérience salariale passée, 
-                                nous sommes aujourd'hui capable de vous proposer des design d'aménagements qui répondront parfaitement
+                                nous sommes aujourd"hui capable de vous proposer des design d"aménagements qui répondront parfaitement
                                 a vos attentes, tout en respectant un budget initial prévu avec vous.
                             </p>
                         </aside>
@@ -144,179 +150,192 @@
         </section>
         <br /><br />
         <!--Section exemple_projets-->
-        <section class='projets txtcenter +tablette'> <!--id projets pour l'ancre dans le menu en haut-->
-            <div id='projets' class='h60px'></div>
-            <div class='titre_projet maxw1400px autolr'>
-                <h2 class='txtcenter fs35px ftblack'>NOS PROJETS</h2>
+        <section class="projets txtcenter +tablette"> <!--id projets pour l"ancre dans le menu en haut-->
+            <div id="projets" class="h60px"></div>
+            <div class="titre_projet maxw1400px autolr">
+                <h2 class="txtcenter fs35px ftblack">NOS PROJETS</h2>
                 <!--3 lignes du dessous pour faire circle avec lignes sur les côtés voir css paramètres css des balises class et class -->
-                <span class='circle_titre_projet + +smartphone'>
+                <span class="circle_titre_projet + +smartphone">
                     <i class="fas fa-circle circle_titre_submenu_projet +smarthpone"></i>
                 </span>
-                <p class='p_projets w60p autolr'>Vous allez découvrir en dessous tout nos projets de création que nous mettons a disposition.
+                <p class="p_projets w60p autolr">Vous allez découvrir en dessous tout nos projets de création que nous mettons a disposition.
                 Si quelque chose vous intéresse rapprochez vous de nous.
                 </p>
             </div>
 
-            <div class='boutons autolr maxw1400px '>
-                <ul class='ensemble_boutons_projets flex flex-jc listtypenone + +smartphone'> 
-                    <li class='bouton_select_portfolio_1 +'>
+            <div class="boutons autolr maxw1400px ">
+                <ul class="ensemble_boutons_projets flex flex-jc listtypenone + +smartphone"> 
+                    <li class="bouton_select_portfolio_1 +">
                         <label>All Works</label>
                     </li>
-                    <li class='bouton_select_portfolio +'>
+                    <li class="bouton_select_portfolio +">
                         <label>Creative</label>
                     </li>
-                    <li class='bouton_select_portfolio +'>
+                    <li class="bouton_select_portfolio +">
                         <label>Corporate</label>
                     </li>
-                    <li class='bouton_select_portfolio_4 +'>
+                    <li class="bouton_select_portfolio_4 +">
                         <label>Portfolio</label>
                     </li>
                 </ul>
             </div>
             <!--Conteneur qui va servir pour faire le portofolio avec un display: flexbox flexjustify beetween (pour centrer), flexwrap pour le retour à la ligne de flex
             autolr pour centrer horizontalement et un max-width : 1600px pour être légèrement plus large que le reste des paragraphes-->
-            <div class='conteneur flex flex-jb flex-wrap txtleft autolr maxw1600px +tablette +smartphone'> 
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/01.jpg' alt='lunettes' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
+            <div class="conteneur flex flex-jb flex-wrap txtleft autolr maxw1600px +tablette +smartphone"> 
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="lunettes" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
                         </div>
-                        <div class='text_img_portfolio +'>Portfolio item 1
-                            <div class='sous_text_portfolio +'>Paire de lunette</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/02.jpg' alt='lapin' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
-                        </div>
-                        <div class='text_img_portfolio +'>Portfolio item 2
-                            <div class='sous_text_portfolio +'>Lapin</div>
+                        <div class="text_img_portfolio +">Portfolio item 1
+                            <div class="sous_text_portfolio +">Paire de lunette</div>
                         </div>
                     </div>
                 </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/03.jpg' alt='logo pompadour' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="lapin" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
                         </div>
-                        <div class='text_img_portfolio +'>Portfolio item 3
-                            <div class='sous_text_portfolio +'>logo pompadour</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/04.jpg' alt='une feuille de papier' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
-                        </div>
-                        <div class='text_img_portfolio +'>Portfolio item 4
-                            <div class='sous_text_portfolio +'>une feuille de papier</div>
+                        <div class="text_img_portfolio +">Portfolio item 2
+                            <div class="sous_text_portfolio +">Lapin</div>
                         </div>
                     </div>
                 </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/05.jpg' alt='deux sacs de shopping' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="logo pompadour" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
                         </div>
-                        <div class='text_img_portfolio +'>Portfolio item 5
-                            <div class='sous_text_portfolio +'>deux sacs de shopping</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/06.jpg' alt='une ville au loin avec un pont en premier plan' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
-                        </div>
-                        <div class='text_img_portfolio +'>Portfolio item 6
-                            <div class='sous_text_portfolio +'>Une ville au loin</div>
+                        <div class="text_img_portfolio +">Portfolio item 3
+                            <div class="sous_text_portfolio +">logo pompadour</div>
                         </div>
                     </div>
                 </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/07.jpg' alt='logo de fusée qui décolle' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="une feuille de papier" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
                         </div>
-                        <div class='text_img_portfolio +'>Portfolio item 7
-                            <div class='sous_text_portfolio +'>logo de fusée qui décolle</div>
+                        <div class="text_img_portfolio +">Portfolio item 4
+                            <div class="sous_text_portfolio +">une feuille de papier</div>
                         </div>
                     </div>
                 </div>
-                <div class='element + +tablette +smartphone'>
-                    <img class='img_portfolio' src='images/portofolio/08.jpg' alt='plusieurs outils de bureau' />
-                    <div class='text +'>
-                        <div class='content_eye ml80p'>
-                            <div class='eye pabsolute'><i class="far fa-eye"></i></div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="deux sacs de shopping" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
                         </div>
-                        <div class='text_img_portfolio +'>Portfolio item 8
-                            <div class='sous_text_portfolio +'>plusieurs outils de bureau</div>
+                        <div class="text_img_portfolio +">Portfolio item 5
+                            <div class="sous_text_portfolio +">deux sacs de shopping</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="une ville au loin avec un pont en premier plan" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
+                        </div>
+                        <div class="text_img_portfolio +">Portfolio item 6
+                            <div class="sous_text_portfolio +">Une ville au loin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="logo de fusée qui décolle" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
+                        </div>
+                        <div class="text_img_portfolio +">Portfolio item 7
+                            <div class="sous_text_portfolio +">logo de fusée qui décolle</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element + +tablette +smartphone">
+                    <img class="img_portfolio" src="https://picsum.photos/id/1025/600/400" alt="plusieurs outils de bureau" />
+                    <div class="text +">
+                        <div class="content_eye ml80p">
+                            <div class="eye pabsolute"><i class="far fa-eye"></i></div>
+                        </div>
+                        <div class="text_img_portfolio +">Portfolio item 8
+                            <div class="sous_text_portfolio +">plusieurs outils de bureau</div>
                         </div>
                     </div>
                 </div>
                         
             </div>
         </section>
-        <!--Bas de la page avec les infos de l'agence (carte et formulaire de contact-->
-        <div id='contact' class='h60px'></div> <!--id contact pour l'ancre dans le menu en haut-->
-        <footer class='contact overhidden m0px '> <!--Va rassembler la carte et aussi le formulaire de contact-->
-            <div class='conteneur_iframe prelative + +tablette +smartphone'> <!--i frame mis dans un conteneur div pour régler la width et passer le w3c source: https://www.coactis.fr/le-coin-du-geek/comment-rendre-une-iframe-responsive-->
+        <!--Bas de la page avec les infos de l"agence (carte et formulaire de contact-->
+        <div id="contact" class="h60px"></div> <!--id contact pour l"ancre dans le menu en haut-->
+        <footer class="contact overhidden m0px "> <!--Va rassembler la carte et aussi le formulaire de contact-->
+            <div class="conteneur_iframe prelative + +tablette +smartphone"> <!--i frame mis dans un conteneur div pour régler la width et passer le w3c source: https://www.coactis.fr/le-coin-du-geek/comment-rendre-une-iframe-responsive-->
                 <!--Code pour la carte maps source: https://embedgooglemaps.com/fr/ -->
                 <iframe src="https://maps.google.com/maps?width=1600&amp;height=555&amp;hl=en&amp;q=33%20chemin%20des%20noisettiers%2006800%20Cagnes-sur-Mer+(AJ%20Jardin)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" >
                 </iframe>
             </div>
-            <div class='conteneur_form_contact + +tablette +smartphone'>  <!--Conteneur placé pour mettre en forme aligné verticalement sur le reste du document le contact form-->  
-                <div class='form_contact prelative w25p pad10px + +tablette +smartphone'> <!--formulaire de contact ne dois pas être fonctionnel-->
-                    <form method='post' action='validation_contact_form'>
-                        <div class='Roboto fs30px'>Contactez-nous </div>
-                        <div class='texte_form lh20px'>
-                            <div class='Roboto fs20px'>AJ-jardin </div>
-                            <div class='Roboto fs15px'>
+            <div class="conteneur_form_contact + +tablette +smartphone ">  <!--Conteneur placé pour mettre en forme aligné verticalement sur le reste du document le contact form-->  
+                <div class="form_contact prelative w25p pad10px + +tablette +smartphone"> <!--formulaire de contact ne dois pas être fonctionnel-->
+                    <form method="post" action="validation_contact_form">
+                        <div class="Roboto fs30px">Contactez-nous </div>
+                        <div class="texte_form lh20px">
+                            <div class="Roboto fs20px">AJ-jardin </div>
+                            <div class="Roboto fs15px">
                                 Résidence plein ciel villa 23 <br />
                                 33 chemin des noisettiers <br />
                                 06800 Cagnes-sur-Mer<br />
                                 Tél : 01.42.56.89.85 
                             </div>
                         </div>
-                        <div class='cases_form'>
-                            <label for='name'>
-                                <!--Input text avec un préremplissage (placeholder) 'votre nom'
-                                mis sur autofocus pour que le visiteur n'est pas a cliquer dessus et un champ required
-                                pour indiquer que le nom est obligatoire pour l'envoi du formulaire (je réutilise la même
+                        <div class="cases_form">
+                            <label for="name">
+                                <!--Input text avec un préremplissage (placeholder) "votre nom"
+                                mis sur autofocus pour que le visiteur n"est pas a cliquer dessus et un champ required
+                                pour indiquer que le nom est obligatoire pour l"envoi du formulaire (je réutilise la même
                                 forme pour tous les champs) -->
-                                <input type='text' id='name' class='name w90p h30px mtb10pxlr0' name='name' placeholder='votre nom'  required /> 
+                                <input type="text" id="name" class="name w90p h30px mtb10pxlr0" name="name" placeholder="votre nom"  required /> 
                             </label>
-                            <br /> <!--Un saut de ligne pour la mise en page c'est plus esthétique-->
-                            <label for='mail'>
-                                <input type='email' id='mail' class='mail  w90p h30px mtb10pxlr0' name='mail' placeholder='votre mail' required />
+                            <br /> <!--Un saut de ligne pour la mise en page c"est plus esthétique-->
+                            <label for="mail">
+                                <input type="email" id="mail" class="mail  w90p h30px mtb10pxlr0" name="mail" placeholder="votre mail" required />
                             </label>
-                            <br /> <!--Un saut de ligne pour la mise en page c'est plus esthétique-->
-                            <label for='subject'>
-                                <input type='text' id='subject' class='subject  w90p h30px mtb10pxlr0' name='subject' placeholder='sujet du message' required />
+                            <br /> <!--Un saut de ligne pour la mise en page c"est plus esthétique-->
+                            <label for="subject">
+                                <input type="text" id="subject" class="subject  w90p h30px mtb10pxlr0" name="subject" placeholder="sujet du message" required />
                             </label>
-                            <br /> <!--Un saut de ligne pour la mise en page c'est plus esthétique-->
-                            <label for='message'>
-                                <textarea id='message' class='w90p h120px mtb10pxlr0' placeholder="votre message"></textarea>
+                            <br /> <!--Un saut de ligne pour la mise en page c"est plus esthétique-->
+                            <label for="message">
+                                <textarea id="message" class="w90p h120px mtb10pxlr0" placeholder="votre message"></textarea>
                             </label>
-                            <br /> <!--Un saut de ligne pour la mise en page c'est plus esthétique-->
+                            <br /> <!--Un saut de ligne pour la mise en page c"est plus esthétique-->
                             <!--Bouton de validation du formulaire-->
-                            <input type='submit' class='submit_bouton pad15px + +tablette +smartphone' value='envoyer le message *' />
+                            <input type="submit" class="submit_bouton pad15px + +tablette +smartphone" value="envoyer le message *" />
                         </div>
                     </form>
                 </div>
            </div>
-           <div class='message_donnees fs10px mt10px'>* Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé. Cela permet de vous adresser des contenus adaptés à vos centres d’intérêt. 
+           <div class="message_donnees fs10px mt10px">* Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé. Cela permet de vous adresser des contenus adaptés à vos centres d’intérêt. 
                Elles sont conservées pendant 3 ans et sont destinées au service marketing Conformément à la loi « informatique et libertés ».</div>
         </footer>
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
     </body>
 </html>
