@@ -85,3 +85,19 @@ html, body {
 #textContact{
     height: 550px;
 }
+
+
+/**********************Contact Section **************************/
+#textContact{
+  border: 2px solid black;
+}
+/* .mailContainer{
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 25%;
+  margin-bottom: 20px;
+} */
+.phoneContainer{
+  border: 2px solid black;
+}
