@@ -5,8 +5,6 @@
             <title>
                 AJ jardin, les jardiniers de tous vos projets
             </title>
-            
-
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, user-scalable=yes"> <!--ligne pour éviter bug des 960px de large sur tous les navigateurs sauf firefox mis le 1.8.19-->
             <!--Pour le référencement source: https://tontonduweb.com/balises-meta-indispensables-pour-partage-sur-reseaux-sociaux/-->
@@ -62,7 +60,7 @@
       <section id="swiper">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
+          <div class="swiper-slide"><img src="images/slider/outils.jpg"></div>
           <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
           <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
           <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
@@ -81,10 +79,10 @@
         </div>
       </section>
 
-      <section class="container jumbotron" id="servicesSection">
+      <section class="container" id="servicesSection">
         <div class="textServices text-center">
           <div class="title">
-            <h2>Nos services</h2>
+            <h2>Nos services </h2>
           </div>
           <div class="titleIntro">
             <p>AJjardin est le fruit de deux passionnés du jardin. 
@@ -99,7 +97,10 @@
           <div class="col-sm-7">
             <div class="row">
               <div class="col-sm-2">
-                <img src="http://placehold.it/100x100">
+                <div class="icon d-flex align-items-center">
+                  <i class="fas fa-tree fa-4x"></i>
+                  <i class="fas fa-circle circle_para_services"></i>
+                </div>
               </div>
               <div class="col-sm-10">
                 <div class="">
@@ -115,7 +116,10 @@
 
             <div class="row">
               <div class="col-sm-2">
-                <img src="http://placehold.it/100x100">
+                <div class="icon d-flex align-items-center">
+                  <i class="fas fa-tree fa-4x"></i>
+                  <i class="fas fa-circle circle_para_services"></i>
+                </div>
               </div>
               <div class="col-sm-10">
                 <div class="">
@@ -131,7 +135,10 @@
 
             <div class="row">
               <div class="col-sm-2">
-                <img src="http://placehold.it/100x100">
+                <div class="icon d-flex align-items-center">
+                  <i class="fas fa-tree fa-4x"></i>
+                  <i class="fas fa-circle circle_para_services"></i>
+                </div>
               </div>
               <div class="col-sm-10">
                 <div class="">
@@ -188,45 +195,40 @@
         </section>
       </section>
 
-      <section id="contact" class="container jumbotron">
-        <div class="row">
-          <div class="col-sm-6">
-            <iframe id="map" src="https://maps.google.com/maps?&amp;hl=en&amp;q=33%20chemin%20des%20noisettiers%2006800%20Cagnes-sur-Mer+(AJ%20Jardin)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" >
-            </iframe>
-          </div>
-          <div class="col-sm-6">
-            <div class="d-flex flex-column justify-content-center align-items-center text-center" id="textContact">
-              <h2 class="text-uppercase">Nous contactez</h2>
-              
-              <div class="btn btn-success mb-4 px-5 phoneContainer">
-                <div>
-                  <i class="fas fa-phone-square fa-3x"></i>
-                </div>
-                <div>06.13.20.97.76 / 06.11.80.22.90</div>
+      <section id="contact" class="container">
+        <div class="container mb-4" id="mapContainer">
+          <iframe id="map" src="https://maps.google.com/maps?&amp;hl=en&amp;q=33%20chemin%20des%20noisettiers%2006800%20Cagnes-sur-Mer+(AJ%20Jardin)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" >
+          </iframe>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center text-center" id="textContact">
+            <h2 class="text-uppercase text-white">Nous contactez</h2>
+            
+            <div class="btn btn-success mb-4 px-5 phoneContainer">
+              <div>
+                <i class="fas fa-phone-square fa-3x"></i>
               </div>
+              <div><a href="tel:+33613209776">06.13.20.97.76</a> / <a href="tel:+33611802290">06.11.80.22.90</a></div>
+            </div>
 
-              <div class="btn btn-primary mb-4 px-5 mailContainer">
-                <a href="mailto:ajjardin@outlook.fr?subject=Demande%20d'informations&body=%0D%0ANous%20sommes%20ravis%20de%20recevoir%20des%20messages.%0D%0ANous%20répondons%20sous%2048H%20maximum%0D%0AAJjardin"> <!--source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks-->
-                  <!--Ligne de dessus permet quand on clique d'envoyer sur le mail pour envoyer un mail a ajjardin@outlook.fr-->
-                <div>
-                  <i class="fas fa-envelope fa-3x"></i>
-                </div>
-                <div>
-                  <p>ajjardin@outlook.fr</p>
-                </div>
-                </a>
+            <div class="btn btn-primary mb-4 px-5 mailContainer">
+              <a href="mailto:ajjardin@outlook.fr?subject=Demande%20d'informations&body=%0D%0ANous%20sommes%20ravis%20de%20recevoir%20des%20messages.%0D%0ANous%20répondons%20sous%2048H%20maximum%0D%0AAJjardin"> <!--source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks-->
+                <!--Ligne de dessus permet quand on clique d'envoyer sur le mail pour envoyer un mail a ajjardin@outlook.fr-->
+              <div>
+                <i class="fas fa-envelope fa-3x"></i>
               </div>
+              <div>
+                <p>ajjardin@outlook.fr</p>
+              </div>
+              </a>
+            </div>
 
-              <div class="btn btn-info text-uppercase mx-3">
-                <p>N'hésitez pas à nous suivre sur Facebook pour voir nos dernières réalisations, on aime bien partager ces beaux moments </p>
-                <a href="https://www.facebook.com/aj.jardin.10"><i class="fab fa-facebook-square fa-3x"></i></a>
-              </div>
-              
+            <div class="btn btn-info text-uppercase mx-3 mb-4">
+              <p>N'hésitez pas à nous suivre sur Facebook pour voir nos dernières réalisations, on aime bien partager ces beaux moments </p>
+              <a href="https://www.facebook.com/aj.jardin.10"><i class="fab fa-facebook-square fa-3x"></i></a>
             </div>
           </div>
         </div>
-          
- 
       </section>
       
 
