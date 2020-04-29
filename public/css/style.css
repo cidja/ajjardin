@@ -190,10 +190,21 @@ html, body {
 }
 
 /*-----------------------Projects Section -----------------------*/
+.buttonProjects{
+  list-style-type: none;}
+.button{
+  background-color: #3a5700;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+.button:hover{
+  background-color: #ff5154;
+}
+
 #projectsSection{
   background-color: #91bd3a;
   border-radius: 20px;
-  
 }
 /************************Map Section******************************/
 #map{
