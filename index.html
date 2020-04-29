@@ -26,8 +26,8 @@
             <meta property="og:image" content="images/tag_facebook.jpg" />
             <meta property="og:description" content="Prêt a tout tondre" />
             <meta property="og:site_name" content="AJ-jardin" />
-            <link rel="stylesheet" href="style.css" /> <!--Lien pour la feuille de style-->
-            <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"> <!--Récupérer sur le site bootswatch pour un design simple et rapide-->
+            <link rel="stylesheet" href="public/css/style.css" /> <!--Lien pour la feuille de style-->
+            <link rel="stylesheet" href="public/css/bootstrap.css">
             <link rel="stylesheet" href="fonts/css/all.css" /> <!--pour la police font awesome source: https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself-->
             <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> <!--Polices GOOGLE-->
             <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
@@ -36,29 +36,36 @@
         </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-flex justify-content-center flex-column">
-      <a class="navbar-brand" href="#accueil">AJjardin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#servicesSection">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projectsSection">Projets réalisés</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul> 
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top d-flex justify-content-center flex-column">
+        <a class="navbar-brand" href="#accueil">AJjardin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicesSection">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projectsSection">Projets réalisés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul> 
+        </div>
+      </nav>
+    </header>
+    <div class="container mainTitle text-center">
+      <h1 class="textGreen text-uppercase">Les jardiniers de tous vos projets</h1>
+    </div>
+      
+      <div class="container text-center">
+        <img src="images/slider/outils.jpg">
       </div>
-    </nav>
-
-    <h1>Les jardiniers de tous vos projets</h1>
-      <section id="swiper">
-        <div class="swiper-container">
+        <!-- <section id="swiper">
+          <div class="swiper-container">
           <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="images/slider/outils.jpg"></div>
           <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
@@ -71,18 +78,19 @@
           <div class="swiper-slide"><img src="https://picsum.photos/id/600/400"></div>
           <div class="swiper-slide">Slide 10</div>
           </div>
-          <!-- Add Arrows -->
+          <!-- Add Arrows 
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <!-- Add Pagination -->
+          <!-- Add Pagination 
           <div class="swiper-pagination"></div>
-        </div>
-      </section>
+        </div> 
+       </section>-->
+     
 
       <section class="container" id="servicesSection">
         <div class="textServices text-center">
-          <div class="title">
-            <h2>Nos services </h2>
+          <div class="titleContainer">
+            <h2 class="titleServices textGreen">Nos services </h2>
           </div>
           <div class="titleIntro">
             <p>AJjardin est le fruit de deux passionnés du jardin. 
@@ -97,16 +105,16 @@
           <div class="col-sm-7">
             <div class="row">
               <div class="col-sm-2">
-                <div class="icon d-flex align-items-center">
-                  <i class="fas fa-tree fa-4x"></i>
-                  <i class="fas fa-circle circle_para_services"></i>
+                <div class="iconTree d-flex align-items-center">
+                  <i class="fas fa-tree fa-4x iconColor"></i>
+                  <i class="fas fa-circle circle_para_services iconColor"></i>
                 </div>
               </div>
               <div class="col-sm-10">
-                <div class="">
+                <h2 class="textGreen">
                   Coupe et élagage
-                </div>
-                <div class="">
+                </h2>
+                <div class="paraServices">
                   La taille des arbres, arbustes et plantes est un art délicat. Si trop coupé le végétal
                    aura du mal a repartir au risque de périr. Si les arbres ne sont pas assez coupés, 
                   le risque qu"il ne donnent que des fruits de mauvaises qualité est grand.
@@ -117,16 +125,16 @@
             <div class="row">
               <div class="col-sm-2">
                 <div class="icon d-flex align-items-center">
-                  <i class="fas fa-tree fa-4x"></i>
-                  <i class="fas fa-circle circle_para_services"></i>
+                  <i class="fas fa-leaf fa-3x iconColor"></i>
+                  <i class="fas fa-circle circle_para_services iconColor"></i>
                 </div>
               </div>
               <div class="col-sm-10">
-                <div class="">
+                <h2 class="textGreen">
                   Tonte et débroussaillage
-                </div>
-                <div class="">
-                  Le débroussaillage est aujourd"hui devenu une obligation pour empêcher la propagation des feux toujours plus
+                </h2>
+                <div class="paraServices">
+                  Le débroussaillage est aujourd"hui devenu une <a class="aLinkGreen" href="https://www.service-public.fr/particuliers/vosdroits/F33298" target="blank">OBLIGATION</a> pour empêcher la propagation des feux toujours plus
                    présents au long de notre magnifique été. Grâce aux dernières technologies électroportatives,
                     cette action ne représente plus une nuisance sonore.
                 </div>
@@ -136,15 +144,15 @@
             <div class="row">
               <div class="col-sm-2">
                 <div class="icon d-flex align-items-center">
-                  <i class="fas fa-tree fa-4x"></i>
-                  <i class="fas fa-circle circle_para_services"></i>
+                  <i class="fas fa-seedling fa-3x iconColor"></i>
+                  <i class="fas fa-circle circle_para_services iconColor"></i>
                 </div>
               </div>
               <div class="col-sm-10">
-                <div class="">
+                <h2 class="textGreen">
                   Création d'espaces verts
-                </div>
-                <div class="">
+                </h2>
+                <div class="paraServices">
                   Fort de notre expérience salariale passée, nous sommes aujourd"hui capable de vous proposer des design d"aménagements qui répondront parfaitement a vos attentes, 
                   tout en respectant un budget initial prévu avec vous.
                 </div>
@@ -154,48 +162,96 @@
         </div>
       </section>
 
-      <section class="container jumbotron" id="projectsSection">
+      <section class="container" id="projectsSection">
         <div class="container" id="titleAndIntro">
-          <div class="text-center">
-            <h2>Nos réalisations</h2>
+          <div class="text-center text-white">
+            <h2 class="titleRealisations">Nos réalisations</h2>
             <p>Vous allez découvrir en dessous tout nos projets de création que nous mettons a disposition. 
               Si quelque chose vous intéresse rapprochez vous de nous.</p>
           </div>
         </div>
         <section class="container">
           <div class="row"> <!--Va affciher 3 photos de large sauf en smartphone affiche 1 photo de large-->
-            <div class="col-sm-4 mb-2">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/1.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/2.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/3.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4 mb-2">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/4.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/5.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/6.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/7.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/8.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-4">
-              <img src="http://picsum.photos/400/300" alt="" class="img-fluid">
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/10.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/11.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/12.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/13.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/14.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/15.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/16.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/17.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/18.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/19.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/20.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/21.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/22.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/23.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/24.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/25.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mb-2">
+              <img src="images/porfolio/26.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </section>
       </section>
 
-      <section id="contact" class="container">
+      <section id="contact" class="container mt-4">
         <div class="container mb-4" id="mapContainer">
           <iframe id="map" src="https://maps.google.com/maps?&amp;hl=en&amp;q=33%20chemin%20des%20noisettiers%2006800%20Cagnes-sur-Mer+(AJ%20Jardin)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" >
           </iframe>
@@ -208,16 +264,16 @@
               <div>
                 <i class="fas fa-phone-square fa-3x"></i>
               </div>
-              <div><a href="tel:+33613209776">06.13.20.97.76</a> / <a href="tel:+33611802290">06.11.80.22.90</a></div>
+              <div class="textWhite"><a href="tel:+33613209776">06.13.20.97.76</a> / <a href="tel:+33611802290">06.11.80.22.90</a></div>
             </div>
 
-            <div class="btn btn-primary mb-4 px-5 mailContainer">
+            <div class="btn btn-primary mb-4 px-5 mailContainer textWhite">
               <a href="mailto:ajjardin@outlook.fr?subject=Demande%20d'informations&body=%0D%0ANous%20sommes%20ravis%20de%20recevoir%20des%20messages.%0D%0ANous%20répondons%20sous%2048H%20maximum%0D%0AAJjardin"> <!--source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks-->
                 <!--Ligne de dessus permet quand on clique d'envoyer sur le mail pour envoyer un mail a ajjardin@outlook.fr-->
-              <div>
+              <div class="textWhite">
                 <i class="fas fa-envelope fa-3x"></i>
               </div>
-              <div>
+              <div class="textWhite">
                 <p>ajjardin@outlook.fr</p>
               </div>
               </a>
@@ -225,7 +281,9 @@
 
             <div class="btn btn-info text-uppercase mx-3 mb-4">
               <p>N'hésitez pas à nous suivre sur Facebook pour voir nos dernières réalisations, on aime bien partager ces beaux moments </p>
-              <a href="https://www.facebook.com/aj.jardin.10"><i class="fab fa-facebook-square fa-3x"></i></a>
+              <div class="textWhite">
+                <a href="https://www.facebook.com/aj.jardin.10"><i class="fab fa-facebook-square fa-3x"></i></a>
+              </div>
             </div>
           </div>
         </div>

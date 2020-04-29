@@ -71,13 +71,31 @@ html, body {
 *,*::before, *::after {box-sizing: border-box;} /* */
 
 
+.textGreen, #textGreen, .aLinkGreen{
+  color: #91bd3a;
+}
+/*-----------------Title Section--------------------------------*/
+.mainTitle{
+  margin-top: 80px;
+}
+
 /*-----------------Section services -----------------------------*/
 .marginServiceSection{
     height: 60px;
 }
+
 .circle{
   border: 1px solid grey;
   border-radius: 50px;
+}
+.iconTree{
+  margin-right: 20px; /*écartement du texte par rapport au texte */
+  color: rgb(93,188,210);
+  border: 1px solid grey;
+  border-radius: 50px; /*pour faire un rond */
+  height: 77px;
+  width: 77px;
+  padding: 15px;
 }
 .icon{ /*placement de la bordure autour des icones */
   margin-right: 20px; /*écartement du texte par rapport au texte */
@@ -95,6 +113,13 @@ html, body {
   padding-bottom: 5px;
   background-color: white;
 }
+.iconColor{
+  color: #91bd3a;
+}
+
+.paraServices{
+  text-align: justify;
+}
 /************************Map Section******************************/
 #map{
     width: 100%;
@@ -110,6 +135,6 @@ html, body {
   border-radius: 20px;
 
 }
-a{
+.textWhite > a{
   color: white !important;
 }
