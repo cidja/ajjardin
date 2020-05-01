@@ -166,7 +166,9 @@ html, body {
 
 /*-----------------------Projects Section -----------------------*/
 .buttonProjects{
-  list-style-type: none;}
+  list-style-type: none;
+  flex-direction: row; /*change quand on passe sur smartphone rajouté une règle en bas de fichier pour le côté smartphone */
+}
 .button{
   background-color: #3a5700;
   padding: 15px;
@@ -211,6 +213,13 @@ html, body {
   overflow: hidden;  /*Je cache le dépassement */
  }
 
+ .dnone{
+   display: none;
+ }
+ .dblock{
+   display: block;
+ }
+
 /************************Map Section******************************/
 #map{
     width: 100%;
@@ -228,4 +237,13 @@ html, body {
 }
 .textWhite > a{
   color: white !important;
+}
+
+/*-------------------------------------------------
+             pour les smartphones 
+--------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .buttonProjects{
+    flex-direction: column !important;
+  }
 }

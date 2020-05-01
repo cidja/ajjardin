@@ -161,26 +161,29 @@
         </div>
         <div class="container">
           
-            <ul class="d-flex flex-row justify-content-center buttonProjects">
-              <li class="button debroussaillage">
+            <ul class="d-flex justify-content-center buttonProjects">
+              <li class="button" id="remiseEtat">
                 <label>Remise en état</label>
               </li>
-              <li class="button taille">
-                <label>Taille d'arbres</label>
+              <li class="button" id="tailleButton">
+                <label>Taille et élagage</label>
               </li>
-              <li class="button creation">
+              <li class="button" id="creationButton">
                 <label>Création espace verts</label>
               </li>
-              <li class="button entretien">
+              <li class="button">
                 <label>Entretien à l'année</label>
+              </li>
+              <li class="button" id="toutesRealisations">
+                <label>Toutes nos réalisations</label>
               </li>
             </ul>
          
         </div>
         <div class="container">
           <div class="row"> <!--Va affciher 3 photos de large sauf en smartphone affiche 1 photo de large-->
-            <div class="col-sm-3 mb-2 element">
-              <img  src="images/porfolio/1.jpg" alt="palmier non élagué" class="img-fluid" data-target="taille"> <!--source data : https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes-->
+            <div class="col-sm-3 mb-2 element taille">
+              <img  src="images/porfolio/1.jpg"  alt="palmier non élagué" class="img-fluid"> <!--source data : https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes-->
               <div class='text container'>
                 <div class='text_img_portfolio'>
                     Taille de palmier
@@ -190,8 +193,8 @@
                 </div>
             </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/2.jpg" alt="palmier élagué" class="img-fluid" data-target="taille">
+            <div class="col-sm-3 mb-2 element taille">
+              <img src="images/porfolio/2.jpg" alt="palmier élagué" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
                     Taille de palmier
@@ -201,7 +204,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element taille">
               <img src="images/porfolio/3.jpg" alt="oliver non élagué" class="img-fluid" data-target="taille">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -212,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element taille">
               <img src="images/porfolio/4.jpg" alt="olivier élagué" class="img-fluid" data-target="taille">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -223,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element taille">
               <img src="images/porfolio/5.jpg" alt="haie non taillée" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -234,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element taille">
               <img src="images/porfolio/6.jpg" alt="haie taillée" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -267,7 +270,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element remiseEtat">
               <img src="images/porfolio/10.jpg" alt="un olivier pris dans les mauvaises herbes" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -278,7 +281,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element remiseEtat">
               <img src="images/porfolio/11.jpg" alt="un olivier débarrassé des mauvaises herbes" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -311,7 +314,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/14.jpg" alt="un talus laissé en friche devant une montée de villa" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -322,7 +325,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/15.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -333,7 +336,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/16.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -344,7 +347,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/17.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -355,7 +358,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/18.jpg" alt="un talus avec des planches où les jardiniers ont planté des nouvelles plantes avec du géotextile" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -366,7 +369,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element creation">
               <img src="images/porfolio/19.jpg" alt="un talus réamenagé avec soin par les jardiniers paysagistes" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -421,7 +424,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element remiseEtat">
               <img src="images/porfolio/24.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -432,7 +435,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 mb-2 element">
+            <div class="col-sm-3 mb-2 element remiseEtat">
               <img src="images/porfolio/25.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
               <div class='text container'>
                 <div class='text_img_portfolio'>
@@ -485,6 +488,7 @@
           </div>
         </div>
       </section>
+      <script src="public/js/main.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
