@@ -207,22 +207,23 @@ html, body {
   border-radius: 20px;
 }
 
+.col-sm-3{
+  padding-right: 0px !important; /* mis à 0 pour faire rentrer le .text dedans parfaitement*/
+}
 .text{
   position: absolute; /*pour le juxtaposer par dessus .element img */
-  left: 0px; /*Coller à droite */
-  bottom: 100%; /* mis en dessous */
   transition: all 0.3s;
-  background-color: rgba(64, 64, 64, 0.7); /*fond avec une opacité légère */
-  width: 100%;
-  color: white; /*Couleur de l'écriture */
-  height: 80px; /*hauteur du fond background */
-  margin-bottom: 1%; /*Pour contrer le padding 1% du .element */
+  background-color: rgba(64, 64, 64, 0.7);
+  width: 89%;
+  color: white;  
+  bottom: 0px; /* mis en dessous */
+  text-align: center;
 }
 .text_img_portfolio{ /*texte qui apparait quand on survol l'image du portfolio */
   font-family: Roboto;
   font-weight: 900; /*très grosse écriture */
   margin-top: 15px; /*décalage pour baisser l'écriture */
-  margin-left: 5%; /*écartement du texte du bord */
+  
 }
 
 .sous_text_portfolio{ /*sous le titre des images au hover */
@@ -230,12 +231,8 @@ html, body {
   font-weight: 400; /*taille classique */
 }
 
-.element:hover .text{
-  bottom: 0px;
-  transition-delay: 0.3s;
-}
 .element{
-  position: relative; /*parent de .text qui va permettre de positionner .text en absolute */
+  /*position: relative; /*parent de .text qui va permettre de positionner .text en absolute */
   overflow: hidden;  /*Je cache le dépassement */
  }
 
