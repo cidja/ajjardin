@@ -121,6 +121,30 @@ html, body {
             transform: scale(1);
   }
 }
+#containerBanderolle{
+  overflow: hidden;
+  background-color: red;
+  border-radius: 25px;
+}
+.banderolle{
+  animation: banderolle 10s linear  infinite reverse;
+  position: relative;
+  color: white;
+}
+@keyframes banderolle{
+  from{left:100%}
+  to{left:-54%}
+}
+#devisMessage{ /*pour faire clignoter les mots devis gratuits */
+  animation-name: blinkDevis;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.7s;
+}
+@keyframes blinkDevis{
+  from{opacity: 0%;}
+  to{opacity: 100%;}
+}
 
 /*-----------------Section services -----------------------------*/
 .marginServiceSection{
