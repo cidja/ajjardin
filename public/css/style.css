@@ -251,4 +251,7 @@ html, body {
   .buttonProjects{
     flex-direction: column !important;
   }
+  h3{
+    text-align: center;
+  }
 }
