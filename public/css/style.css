@@ -48,6 +48,7 @@ html, body {
   color: #91bd3a;
 }
 
+
 /*-----------------Navbar Section -------------------------------*/
 #titleNavbar{
   font-size: 50px;
@@ -180,13 +181,10 @@ html, body {
   padding-bottom: 5px;
   background-color: white;
 }
-.iconColor{
-  color: #91bd3a;
-}
-
-.paraServices{
-  text-align: justify;
-}
+.green{
+  color: #91bd3a;}
+.yellow{
+  color: #ffc107;}
 
 /*-----------------------Projects Section -----------------------*/
 .buttonProjects{
