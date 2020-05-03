@@ -32,11 +32,11 @@
             <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> <!--Polices GOOGLE-->
             <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
             <script src="https://kit.fontawesome.com/bad7172f0a.js" crossorigin="anonymous"></script> <!--CDN fontawesome-->
-            
-
         </head>
-
   <body>
+
+
+    <!--*********************NavBar part **************************-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-success d-flex justify-content-center flex-column">
         <a class="navbar-brand" href="#accueil" id="titleNavbar">AJjardin</a>
@@ -58,9 +58,12 @@
         </div>
       </nav>
     </header>
+
+
+    <!--*****************************Title part ********************************-->
     <div class="container mainTitle text-center">
       <div class="containerCircle">
-      <h1 class="textGreen text-uppercase">Les jardiniers de tous vos projets</h1>
+      <h1 class="mainGreen text-uppercase">Les jardiniers de tous vos projets</h1>
         <!-- source animation: https://graphiste.com/blog/animations-css-->
         <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <circle class="Oval" cx="512" cy="512" r="512"></circle>
@@ -74,16 +77,21 @@
         <h3>Déplacement dans tout le 06 et <span id="devisMessage">devis gratuits</span></h3>
       </div>
     </div>
-      
+
+
+      <!--********************Images début ************************-->
       <div class="container text-center">
         <img src="images/slider/outils.jpg" alt="nombreux outils still posé dans un jardin" class="img-fluid">
       </div>
-      <section class="container" id="servicesSection">
+
+
+      <!---**************Partie Services************************-->
+<section class="container" id="servicesSection">
         <div class="textServices text-center">
           <div class="titleContainer">
-            <h2 class="titleServices textGreen">Nos services </h2>
+            <h2 class="titleServices text-white">NOS SERVICES </h2>
           </div>
-          <div class="titleIntro">
+          <div class="titleIntro text-white">
             <h5>AJjardin est le fruit de deux passionnés du jardin. 
               Nous mettrons tout notre savoir pour vous apporter les meilleurs solutions.</h5>
           </div>
@@ -92,7 +100,7 @@
         <div class="row" id="contentServices">
           <div class="col-sm-5">
             <div class="container">
-              <img src="images/tondeuse.jpg" alt="gros plan sur les roues d'une tondeuse rouge dans un jardin" class="img-fluid">
+              <img src="images/garden.jpg" alt="gros plan sur les roues d'une tondeuse rouge dans un jardin" class="img-fluid">
             </div>
             
           </div>
@@ -100,8 +108,8 @@
             <div class="row green">
               <div class="d-flex justify-content-center offset-md-1 col-sm-1">
                 <div class="d-flex align-items-center">
-                  <i class="fas fa-tree fa-2x "></i>
-                  <i class="fas fa-circle circle_para_services "></i>
+                  <i class="fas fa-tree fa-2x"></i>
+                  <i class="fas fa-circle pl-2 "></i>
                 </div>
               </div>
               <div class="col-sm-10">
@@ -200,12 +208,14 @@
         </div>
       </section>
 
+
+      <!--*************************Partie réalisations **************************-->
       <section class="container mt-3 pt-3 pb-5" id="projectsSection">
         <div class="container" id="titleAndIntro">
           <div class="text-center text-white">
             <h2 class="titleRealisations">Nos réalisations</h2>
-            <p>Vous allez découvrir en dessous tout nos projets de création que nous mettons a disposition. 
-              Si quelque chose vous intéresse rapprochez vous de nous.</p>
+            <h5>Vous allez découvrir en dessous tout nos projets de création que nous mettons a disposition. 
+              Si quelque chose vous intéresse rapprochez vous de nous.</h5>
           </div>
         </div>
         <div class="container">
@@ -496,6 +506,8 @@
         </div>
       </section>
 
+
+      <!--*****************Partie contact******************************-->
       <section id="contact" class="container mt-4">
         <div class="container mb-4" id="mapContainer">
           <iframe id="map" src="https://maps.google.com/maps?&amp;hl=en&amp;q=33%20chemin%20des%20noisettiers%2006800%20Cagnes-sur-Mer+(AJ%20Jardin)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" >
