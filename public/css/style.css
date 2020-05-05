@@ -57,7 +57,9 @@ html, body {
   font-size: 25px;
   color: white !important;
 }
-
+.linkNavbar:hover{
+  border-top: 2px solid white;
+}
 
 /*-----------------Title Section---------------------------------*/
 .containerCircle {
@@ -121,6 +123,9 @@ html, body {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.mainTitle{
+  margin-top: 101px; /*pour se positionner en dessous de la navbar fixe */
 }
 #containerBanderolle{
   overflow: hidden;
