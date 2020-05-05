@@ -1,5 +1,5 @@
 
-
+/* 
 const element = document.getElementsByClassName('element'); //utilisé pour cibler tous les éléments
 
 
@@ -56,3 +56,4 @@ toutesRealisationsButton.addEventListener('click', function (e) {
         element[i].classList.replace('dnone','dblock');
     }
 });
+ */
