@@ -218,294 +218,350 @@
               Si quelque chose vous intéresse rapprochez vous de nous.</h5>
           </div>
         </div>
-        <div class="container">
-          
-            <ul class="d-flex justify-content-center buttonProjects">
-              <li class="button" id="remiseEtat">
-                <label>Remise en état</label>
-              </li>
-              <li class="button" id="tailleButton">
-                <label>Taille et élagage</label>
-              </li>
-              <li class="button" id="creationButton">
-                <label>Création espace verts</label>
-              </li>
-              <li class="button" id="toutesRealisations">
-                <label>Toutes nos réalisations</label>
-              </li>
-            </ul>
-         
-        </div>
-        <div class="container">
-          <div class="row"> <!--Va affciher 3 photos de large sauf en smartphone affiche 1 photo de large-->
-            <div class="col-sm-3 mb-2 element taille">
-              <img  src="images/porfolio/1.jpg"  alt="palmier non élagué" class="img-fluid"> <!--source data : https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes-->
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Taille de palmier
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
+        
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expended="true" aria-controls="collapseOne">
+                  Taille et élagage
+                </button>
+              </h5>
             </div>
-            </div>
-            <div class="col-sm-3 mb-2 element taille">
-              <img src="images/porfolio/2.jpg" alt="palmier élagué" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Taille de palmier
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element taille">
-              <img src="images/porfolio/3.jpg" alt="oliver non élagué" class="img-fluid" data-target="taille">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Taille d'olivier
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element taille">
-              <img src="images/porfolio/4.jpg" alt="olivier élagué" class="img-fluid" data-target="taille">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Taille d'olivier
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element taille">
-              <img src="images/porfolio/5.jpg" alt="haie non taillée" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Taille de haie
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element taille">
-              <img src="images/porfolio/6.jpg" alt="haie taillée" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Taille de haie
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/7.jpg" alt="dégagement d'un toit avec de la végétation avant" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Dégagement de toit
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/8.jpg" alt="dégagement d'un toit avec de la végétation après" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Dégagement de toit
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element remiseEtat">
-              <img src="images/porfolio/10.jpg" alt="un olivier pris dans les mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Remise en état
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element remiseEtat">
-              <img src="images/porfolio/11.jpg" alt="un olivier débarrassé des mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Remise en état
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/12.jpg" alt="une façade de maison avec une végétation envahissante sur le mur" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/13.jpg" alt="une façade de maison nettoyé de toute la végétation envihissante" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/14.jpg" alt="un talus laissé en friche devant une montée de villa" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Création 
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/15.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Création
-                    <div class='sous_text_portfolio'>
-                      Pendant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/16.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Création
-                    <div class='sous_text_portfolio'>
-                      Pendant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/17.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Création
-                    <div class='sous_text_portfolio'>
-                      Pendant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/18.jpg" alt="un talus avec des planches où les jardiniers ont planté des nouvelles plantes avec du géotextile" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Création
-                    <div class='sous_text_portfolio'>
-                      Résultat à la fin du chantier
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element creation">
-              <img src="images/porfolio/19.jpg" alt="un talus réamenagé avec soin par les jardiniers paysagistes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Création
-                    <div class='sous_text_portfolio'>
-                      Résultat à la fin du chantier
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/20.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/21.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/22.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element">
-              <img src="images/porfolio/23.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Entretien régulier
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element remiseEtat">
-              <img src="images/porfolio/24.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                  Remise en état
-                    <div class='sous_text_portfolio'>
-                      Avant
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 mb-2 element remiseEtat">
-              <img src="images/porfolio/25.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
-              <div class='text container'>
-                <div class='text_img_portfolio'>
-                    Remise en état
-                    <div class='sous_text_portfolio'>
-                      Après
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img  src="images/porfolio/1.jpg"  alt="palmier non élagué" class="img-fluid"> <!--source data : https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes-->
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Taille de palmier
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img src="images/porfolio/2.jpg" alt="palmier élagué" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Taille de palmier
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img src="images/porfolio/3.jpg" alt="oliver non élagué" class="img-fluid" data-target="taille">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Taille d'olivier
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img src="images/porfolio/4.jpg" alt="olivier élagué" class="img-fluid" data-target="taille">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Taille d'olivier
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img src="images/porfolio/5.jpg" alt="haie non taillée" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Taille de haie
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element taille">
+                    <img src="images/porfolio/6.jpg" alt="haie taillée" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Taille de haie
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/7.jpg" alt="dégagement d'un toit avec de la végétation avant" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Dégagement de toit
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/8.jpg" alt="dégagement d'un toit avec de la végétation après" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Dégagement de toit
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> <!--Fin collapseOne-->
+
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link  collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Remise en état
+                  </button>
+                </h5>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3 mb-2 element remiseEtat">
+                    <img src="images/porfolio/10.jpg" alt="un olivier pris dans les mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Remise en état
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element remiseEtat">
+                    <img src="images/porfolio/11.jpg" alt="un olivier débarrassé des mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Remise en état
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element remiseEtat">
+                    <img src="images/porfolio/24.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Remise en état
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element remiseEtat">
+                    <img src="images/porfolio/25.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Remise en état
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Création d'espaces verts
+                  </button>
+                </h5>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/14.jpg" alt="un talus laissé en friche devant une montée de villa" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Création 
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/15.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Création
+                          <div class='sous_text_portfolio'>
+                            Pendant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/16.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Création
+                          <div class='sous_text_portfolio'>
+                            Pendant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/17.jpg" alt="un talus arrangé en planche agricole" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Création
+                          <div class='sous_text_portfolio'>
+                            Pendant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/18.jpg" alt="un talus avec des planches où les jardiniers ont planté des nouvelles plantes avec du géotextile" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Création
+                          <div class='sous_text_portfolio'>
+                            Résultat à la fin du chantier
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element creation">
+                    <img src="images/porfolio/19.jpg" alt="un talus réamenagé avec soin par les jardiniers paysagistes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Création
+                          <div class='sous_text_portfolio'>
+                            Résultat à la fin du chantier
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!--Fin collapseThree-->
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Entretien Régulier
+                  </button>
+                </h5>
+              </div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="collapse" data-target="#headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/12.jpg" alt="une façade de maison avec une végétation envahissante sur le mur" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/13.jpg" alt="une façade de maison nettoyé de toute la végétation envihissante" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/20.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                          Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/21.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/22.jpg" alt="un jardin envahi par les mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Avant
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-2 element">
+                    <img src="images/porfolio/23.jpg" alt="un jardin sans mauvaises herbes" class="img-fluid">
+                    <div class='text container'>
+                      <div class='text_img_portfolio'>
+                        Entretien régulier
+                          <div class='sous_text_portfolio'>
+                            Après
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div> <!--Fin collapseFour-->
+
+          </div> <!--Fin div accordion-->
+      </section>
 
       <!--*****************Partie contact******************************-->
       <section id="contact" class="container mt-4">
