@@ -57,6 +57,10 @@ html, body {
   font-size: 25px;
   color: white !important;
 }
+.linkNavbar:hover{
+  color: black !important;
+
+}
 
 /*-----------------Title Section---------------------------------*/
 .containerCircle {
