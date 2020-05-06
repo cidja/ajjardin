@@ -33,7 +33,7 @@ html, body {
     height: 100%;
   }
   body {
-    background: #eee;
+    background: #d3d3d3 !important;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color:#000;
@@ -56,9 +56,6 @@ html, body {
 .nav-item > .nav-link, .navbar-brand{
   font-size: 25px;
   color: white !important;
-}
-.linkNavbar:hover{
-  border-top: 2px solid white;
 }
 
 /*-----------------Title Section---------------------------------*/
@@ -157,7 +154,7 @@ html, body {
     height: 60px;
 }
 #servicesSection{
-  background-color: forestgreen;
+  background-color: #7E5835; /*source: http://www.letoileauxsecrets.fr/couleurs/couleurs-brun.html */
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 50px;
@@ -169,28 +166,16 @@ html, body {
   
 }
 .green{
-  color: #91bd3a;}
+  color: #3A9D23;}
 .yellow{
   color: #ffc107;}
 
 /*-----------------------Projects Section -----------------------*/
-.buttonProjects{
-  list-style-type: none;
-  flex-direction: row; /*change quand on passe sur smartphone rajouté une règle en bas de fichier pour le côté smartphone */
-}
-.button{
-  background-color: #228b22;
-  padding: 15px;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 20px;
-}
-.button:hover{
-  background-color: #ff5154;
-}
+ 
+
 
 #projectsSection{
-  background-color: #91bd3a;
+  background-color: #3A9D23;
   border-radius: 20px;
 }
 
@@ -224,6 +209,9 @@ html, body {
   overflow: hidden;  /*Je cache le dépassement */
  }
 
+.cardSelectionGreenLight{
+  background-color: #32CD32 !important;
+}
 
 /************************Map Section******************************/
 #map{
@@ -236,12 +224,16 @@ html, body {
 
 /**********************Contact Section **************************/
 #textContact{
-  background-color: RGBa(32,201,151, 0.6);
+  background-color: #7E5835;
   border-radius: 20px;
-
 }
-.textWhite > a{
-  color: white !important;
+div > a, div > i, #socialPara{
+  color: #7E5835 !important;
+}
+
+#phoneContainer, #mailContainer, #socialContainer{
+  background-color: #32CD32 !important;
+  border-radius: 20px;
 }
 
 /*-------------------------------------------------

@@ -333,7 +333,7 @@
               </div>
             </div> <!--Fin collapseOne-->
 
-            <div class="card bg-warning">
+            <div class="card cardSelectionGreenLight">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0 text-center">
                   <button class="btn btn-link  collapsed text-white text-uppercase" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -343,7 +343,7 @@
               </div>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body bg-warning">
+              <div class="card-body cardSelectionGreenLight">
                 <div class="row">
                   <div class="col-sm-3 mb-2 element remiseEtat">
                     <img src="images/porfolio/10.jpg" alt="un olivier pris dans les mauvaises herbes" class="img-fluid">
@@ -476,7 +476,7 @@
               </div>
             </div> <!--Fin collapseThree-->
 
-            <div class="card bg-warning">
+            <div class="card cardSelectionGreenLight">
               <div class="card-header" id="headingFour">
                 <h5 class="mb-0 text-center ">
                   <button class="btn btn-link collapsed text-white text-uppercase" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -486,7 +486,7 @@
               </div>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="collapse" data-target="#headingFour" data-parent="#accordion">
-              <div class="card-body bg-warning">
+              <div class="card-body cardSelectionGreenLight">
                 <div class="row">
                   <div class="col-sm-3 mb-2 element">
                     <img src="images/porfolio/12.jpg" alt="une façade de maison avec une végétation envahissante sur le mur" class="img-fluid">
@@ -571,29 +571,33 @@
         <div class="container">
           <div class="d-flex flex-column justify-content-center align-items-center text-center" id="textContact">
             <h2 class="text-uppercase text-white">Nous contactez</h2>
+            <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-3 mb-4 px-5" id="phoneContainer">
+                <div>
+                  <i class="fas fa-phone-square fa-3x"></i>
+                </div>
+                <div class="textWhite"><a href="tel:+33613209776">06.13.20.97.76 /</a>  <a href="tel:+33611802290">06.11.80.22.90</a></div>
+              </div>
+  
+              <div class="col-sm-3 offset-sm-1 mb-4 px-5" id="mailContainer">
+                <a href="mailto:ajjardin@outlook.fr?subject=Demande%20d'informations&body=%0D%0ANous%20sommes%20ravis%20de%20recevoir%20des%20messages.%0D%0ANous%20répondons%20sous%2048H%20maximum%0D%0AAJjardin"> <!--source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks-->
+                  <!--Ligne de dessus permet quand on clique d'envoyer sur le mail pour envoyer un mail a ajjardin@outlook.fr-->
+                <div>
+                  <i class="fas fa-envelope fa-3x"></i>
+                </div>
+                <div>
+                  <p>ajjardin@outlook.fr</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
             
-            <div class="btn btn-success mb-4 px-5 phoneContainer">
+
+            <div class="text-uppercase mx-3 mb-4" id="socialContainer">
+              <p id="socialPara">N'hésitez pas à nous suivre sur les réseaux sociaux pour voir nos dernières réalisations, on aime bien partager ces beaux moments </p>
               <div>
-                <i class="fas fa-phone-square fa-3x"></i>
-              </div>
-              <div class="textWhite"><a href="tel:+33613209776">06.13.20.97.76</a> / <a href="tel:+33611802290">06.11.80.22.90</a></div>
-            </div>
-
-            <div class="btn btn-primary mb-4 px-5 mailContainer textWhite">
-              <a href="mailto:ajjardin@outlook.fr?subject=Demande%20d'informations&body=%0D%0ANous%20sommes%20ravis%20de%20recevoir%20des%20messages.%0D%0ANous%20répondons%20sous%2048H%20maximum%0D%0AAJjardin"> <!--source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks-->
-                <!--Ligne de dessus permet quand on clique d'envoyer sur le mail pour envoyer un mail a ajjardin@outlook.fr-->
-              <div class="textWhite">
-                <i class="fas fa-envelope fa-3x"></i>
-              </div>
-              <div class="textWhite">
-                <p>ajjardin@outlook.fr</p>
-              </div>
-              </a>
-            </div>
-
-            <div class="btn btn-info text-uppercase mx-3 mb-4">
-              <p>N'hésitez pas à nous suivre sur les réseaux sociaux pour voir nos dernières réalisations, on aime bien partager ces beaux moments </p>
-              <div class="textWhite">
                 <a href="https://www.facebook.com/aj.jardin.10"><i class="fab fa-facebook-square fa-3x"></i></a>
                 <a href="https://www.instagram.com/a.j.jardin/"><i class="fa fa-instagram fa-3x" ></i></a>
               </div>
