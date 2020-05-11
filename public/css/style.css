@@ -56,6 +56,7 @@ html, body {
 .nav-item > .nav-link, .navbar-brand{
   font-size: 25px;
   color: white !important;
+  transition: color .5s; /* source: https://youtu.be/JOBlm6kWsMM?t=132 */
 }
 .linkNavbar:hover{
   color: black !important;
@@ -175,7 +176,13 @@ html, body {
 
 /*-----------------------Projects Section -----------------------*/
  
-
+.card-header button{
+  transition: font-size .5s;
+}
+.card-header:hover button{
+  text-decoration: none;
+  font-size: 20px;
+}
 
 #projectsSection{
   background-color: #3A9D23;
