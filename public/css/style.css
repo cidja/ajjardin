@@ -130,13 +130,13 @@ html, body {
   border-radius: 25px;
 }
 .banderolle{
-  animation: banderolle 10s linear  infinite reverse;
+  animation: banderolle 10s linear  infinite ;
   position: relative;
   color: white;
 }
 @keyframes banderolle{
-  from{left:100%}
-  to{left:-54%}
+  from{transform: translatex(-70%);}
+  to{transform: translateX(100%);}
 }
 #devisMessage{ /*pour faire clignoter les mots devis gratuits */
   animation-name: blinkDevis;
@@ -148,7 +148,6 @@ html, body {
   from{opacity: 0%;}
   to{opacity: 100%;}
 }
-
 /*-----------------Section services -----------------------------*/
 .marginServiceSection{
     height: 60px;
